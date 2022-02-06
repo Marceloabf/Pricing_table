@@ -1,0 +1,199 @@
+/*Formatação*/
+*{
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Open sans";
+}
+:root {
+  --yellow: #ffcc29;
+  --blue: #1d539e;
+  --gray: #828799;
+  --page-background: #f9fbfc;
+}
+body{
+  background: var(--page-background);
+}
+/*Formatação - header*/
+header{
+  height: 450px;
+  background: var(--blue);
+  font-family: "Open sans";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1{
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+header p{
+  font-weight: 400;
+  font-size: 18px;
+}
+.header_text{
+  margin-bottom: 64px;
+}
+/*formatação cards*/
+.cards{
+height: 601px;
+display: flex;
+justify-content: center;
+gap: 20px;
+position: relative;
+bottom: 150px;
+}
+/*formatação do interior dos cards*/
+.p1,.p2,.p3{ /* junção dos 3 cards*/
+  height:  470px;/*29.4rem;*/
+  width:355px;/*22.2rem;*/
+  background: white;
+  border: 1px solid --gray;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px #ccc;
+  display: grid;
+  grid-template-areas:
+  'plano'
+  'preço'
+  'descrição'
+  'lista'
+  'botão';
+  grid-template-rows: 0.16fr 0.16fr 0.11fr 0.38fr 0.18fr;
+  grid-template-columns: 1fr ;
+  padding-top: 0;
+}
+.p2{
+  width:355px;
+  height: 490px;
+  position: relative;
+  bottom: 20px;
+}
+.p1,.p3{
+  padding: 30px;
+}
+.paddingp2{
+  padding: 30px;
+}
+.p2 h2{
+  padding:30px;
+  border-radius: 5px 5px 0 0;
+}
+/*formatação dos nomes dos planos */
+.cards h2{
+  display: flex;
+  align-items: center;
+  font-family: "Open sans";
+  font-weight: 600;
+  font-size: 18px;
+}
+.buttonpopular{
+  display: flex;
+  align-items: center;
+  background: var(--yellow);
+  border-radius: 5px 5px 0 0;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.buttonpopular p{
+  height: 32px;
+  width: 94px;
+  background:rgba(29, 83, 158, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
+}
+/*formatação do preço*/
+.price{
+  display: flex;
+  align-items: center; 
+}
+.big_price{
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "Open sans";
+}
+.small_price{
+  font-family: "Open sans";
+  font-weight: bold;
+  font-size: 18px;
+}
+.month{
+  font-family: "Open sans";
+  font-size: 18px;
+  color: #828799;
+  font-weight: normal;
+  padding-left: 5px;
+}
+
+/*formatação da descrição*/
+.description{
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  font-family: "Open sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 19.07px;
+  padding-bottom: 20px;
+}
+/*formatação da lista*/
+.lista{
+  grid-area: lista;
+  display: flex;
+  flex-direction: column;
+}
+.cards ul{
+  padding-left: 0;
+  padding-top: 20px;
+}
+.cards ul li{
+
+font-weight: 600;
+font-family: "Open sans";
+font-size: 16px;
+color: #828799;
+line-height: 22px;
+}
+.cards ul li:nth-child(2){
+  padding-top: 15px;
+}
+.cards ul li:nth-child(3){
+  padding-top: 15px;
+}
+.cards ul li img{
+  padding-right: 15px;
+  }
+/*formatação do botão*/
+button{
+  font-family: "Open sans";
+  border-radius: 15px;
+  font-weight: 600;
+  border: 1px solid #1d539e;
+  height: 49px;
+  width: 296px;
+  background:white;   
+  color:var(--blue);
+  box-sizing: border-box;
+  position: relative;
+  top: 38px;
+}
+button a{
+  color:rgba(29, 83, 158, 1);
+}
+.button{
+  background: var(--blue);
+}
+.button a{
+  color: white;
+}
+/*flexing-wrap:wrap* - responsivo/
